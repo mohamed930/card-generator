@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		D36E084A28DA38FC00C77B2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36E084928DA38FC00C77B2F /* AppDelegate.swift */; };
-		D36E084E28DA38FC00C77B2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36E084D28DA38FC00C77B2F /* ViewController.swift */; };
+		D36E084E28DA38FC00C77B2F /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36E084D28DA38FC00C77B2F /* CardsViewController.swift */; };
 		D36E085128DA38FC00C77B2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D36E084F28DA38FC00C77B2F /* Main.storyboard */; };
 		D36E085328DA38FE00C77B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D36E085228DA38FE00C77B2F /* Assets.xcassets */; };
 		D36E085628DA38FE00C77B2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D36E085428DA38FE00C77B2F /* LaunchScreen.storyboard */; };
+		D36E086428DA3AE700C77B2F /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36E086328DA3AE700C77B2F /* UIViewController.swift */; };
+		D36E086828DA3CF200C77B2F /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36E086628DA3CF200C77B2F /* CardCell.swift */; };
+		D36E086928DA3CF200C77B2F /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D36E086728DA3CF200C77B2F /* CardCell.xib */; };
+		D36E086C28DA3DCF00C77B2F /* cardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36E086B28DA3DCF00C77B2F /* cardModel.swift */; };
+		E57979108E418C20FB00B012 /* Pods_card_generator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41BC52F883E6073B25E1E70 /* Pods_card_generator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B295D8591F2AE686784D3EF /* Pods-card-generator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-card-generator.debug.xcconfig"; path = "Target Support Files/Pods-card-generator/Pods-card-generator.debug.xcconfig"; sourceTree = "<group>"; };
+		5952CE2B538B487F8FDA9ED0 /* Pods-card-generator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-card-generator.release.xcconfig"; path = "Target Support Files/Pods-card-generator/Pods-card-generator.release.xcconfig"; sourceTree = "<group>"; };
+		B41BC52F883E6073B25E1E70 /* Pods_card_generator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_card_generator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D36E084628DA38FC00C77B2F /* card-generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "card-generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D36E084928DA38FC00C77B2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D36E084D28DA38FC00C77B2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D36E084D28DA38FC00C77B2F /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		D36E085028DA38FC00C77B2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D36E085228DA38FE00C77B2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D36E085528DA38FE00C77B2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D36E085728DA38FE00C77B2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D36E086328DA3AE700C77B2F /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		D36E086628DA3CF200C77B2F /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		D36E086728DA3CF200C77B2F /* CardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
+		D36E086B28DA3DCF00C77B2F /* cardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E57979108E418C20FB00B012 /* Pods_card_generator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30B17D4D7A0007E67688E22D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B295D8591F2AE686784D3EF /* Pods-card-generator.debug.xcconfig */,
+				5952CE2B538B487F8FDA9ED0 /* Pods-card-generator.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4E997490E851E4AB57AE25E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B41BC52F883E6073B25E1E70 /* Pods_card_generator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D36E083D28DA38FC00C77B2F = {
 			isa = PBXGroup;
 			children = (
 				D36E084828DA38FC00C77B2F /* card-generator */,
 				D36E084728DA38FC00C77B2F /* Products */,
+				30B17D4D7A0007E67688E22D /* Pods */,
+				4E997490E851E4AB57AE25E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,9 +87,11 @@
 			isa = PBXGroup;
 			children = (
 				D36E085D28DA394200C77B2F /* AppDelegate */,
-				D36E085E28DA395200C77B2F /* controller */,
 				D36E086128DA397F00C77B2F /* launch screen */,
+				D36E086A28DA3DBC00C77B2F /* Model */,
+				D36E085E28DA395200C77B2F /* controller */,
 				D36E085F28DA395D00C77B2F /* views */,
+				D36E086228DA3AD600C77B2F /* Extensions - Customs */,
 				D36E086028DA396E00C77B2F /* Assists */,
 			);
 			path = "card-generator";
@@ -74,7 +108,7 @@
 		D36E085E28DA395200C77B2F /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				D36E084D28DA38FC00C77B2F /* ViewController.swift */,
+				D36E084D28DA38FC00C77B2F /* CardsViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -83,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				D36E084F28DA38FC00C77B2F /* Main.storyboard */,
+				D36E086528DA3CCF00C77B2F /* Cells */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -104,6 +139,31 @@
 			path = "launch screen";
 			sourceTree = "<group>";
 		};
+		D36E086228DA3AD600C77B2F /* Extensions - Customs */ = {
+			isa = PBXGroup;
+			children = (
+				D36E086328DA3AE700C77B2F /* UIViewController.swift */,
+			);
+			path = "Extensions - Customs";
+			sourceTree = "<group>";
+		};
+		D36E086528DA3CCF00C77B2F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D36E086628DA3CF200C77B2F /* CardCell.swift */,
+				D36E086728DA3CF200C77B2F /* CardCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D36E086A28DA3DBC00C77B2F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D36E086B28DA3DCF00C77B2F /* cardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -111,9 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D36E085A28DA38FE00C77B2F /* Build configuration list for PBXNativeTarget "card-generator" */;
 			buildPhases = (
+				C7B27EE2B022A687B4FA7F78 /* [CP] Check Pods Manifest.lock */,
 				D36E084228DA38FC00C77B2F /* Sources */,
 				D36E084328DA38FC00C77B2F /* Frameworks */,
 				D36E084428DA38FC00C77B2F /* Resources */,
+				EE5A82B01D497EC7BC08D0BC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -165,18 +227,64 @@
 				D36E085628DA38FE00C77B2F /* LaunchScreen.storyboard in Resources */,
 				D36E085328DA38FE00C77B2F /* Assets.xcassets in Resources */,
 				D36E085128DA38FC00C77B2F /* Main.storyboard in Resources */,
+				D36E086928DA3CF200C77B2F /* CardCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C7B27EE2B022A687B4FA7F78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-card-generator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE5A82B01D497EC7BC08D0BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-card-generator/Pods-card-generator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-card-generator/Pods-card-generator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-card-generator/Pods-card-generator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D36E084228DA38FC00C77B2F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D36E084E28DA38FC00C77B2F /* ViewController.swift in Sources */,
+				D36E084E28DA38FC00C77B2F /* CardsViewController.swift in Sources */,
 				D36E084A28DA38FC00C77B2F /* AppDelegate.swift in Sources */,
+				D36E086C28DA3DCF00C77B2F /* cardModel.swift in Sources */,
+				D36E086428DA3AE700C77B2F /* UIViewController.swift in Sources */,
+				D36E086828DA3CF200C77B2F /* CardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +426,7 @@
 		};
 		D36E085B28DA38FE00C77B2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B295D8591F2AE686784D3EF /* Pods-card-generator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -348,6 +457,7 @@
 		};
 		D36E085C28DA38FE00C77B2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5952CE2B538B487F8FDA9ED0 /* Pods-card-generator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
