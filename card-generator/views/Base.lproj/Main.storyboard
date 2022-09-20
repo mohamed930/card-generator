@@ -21,7 +21,13 @@
                             <outlet property="delegate" destination="QRG-Nt-hDk" id="4g9-BL-kJz"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="الكروت" id="ow1-x2-cN4"/>
+                    <navigationItem key="navigationItem" title="الكروت" id="ow1-x2-cN4">
+                        <barButtonItem key="rightBarButtonItem" title="تصدير الكروت" id="SDs-fO-xuW">
+                            <connections>
+                                <action selector="exportButtonAction:" destination="QRG-Nt-hDk" id="Ck3-WA-CTm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uk4-FE-HRi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

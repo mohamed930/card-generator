@@ -12,7 +12,7 @@ class CardsViewController: UITableViewController {
 
     let cellNibFile = "CardCell"
     let cellIdentifier = "Cell"
-    let baseurl = "https://462f-41-42-35-163.ngrok.io/"
+    let baseurl = "http://192.168.1.52:3001/" // "https://462f-41-42-35-163.ngrok.io/"
     let endPoint = "data"
     
     var cards: cardModel?
@@ -60,6 +60,12 @@ class CardsViewController: UITableViewController {
         }
     }
     // -------------------------------------------
+    
+    
+    // MARK: TODO: This method for action export cards button.
+    @IBAction func exportButtonAction (_ sender:Any) {
+        print("we are here!!")
+    }
     
     // MARK: TODO: These method for tableView Configure.
     // -------------------------------------------------------
