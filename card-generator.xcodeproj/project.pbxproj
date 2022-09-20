@@ -16,6 +16,10 @@
 		D36E086828DA3CF200C77B2F /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36E086628DA3CF200C77B2F /* CardCell.swift */; };
 		D36E086928DA3CF200C77B2F /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D36E086728DA3CF200C77B2F /* CardCell.xib */; };
 		D36E086C28DA3DCF00C77B2F /* cardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36E086B28DA3DCF00C77B2F /* cardModel.swift */; };
+		D36E087328DA48E600C77B2F /* CardDesgin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36E087128DA48E600C77B2F /* CardDesgin.swift */; };
+		D36E087428DA48E600C77B2F /* CardDesgin.xib in Resources */ = {isa = PBXBuildFile; fileRef = D36E087228DA48E600C77B2F /* CardDesgin.xib */; };
+		D3E5ECEA28DA6A8D002CFB4C /* CardDesginBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E5ECE828DA6A8D002CFB4C /* CardDesginBack.swift */; };
+		D3E5ECEB28DA6A8D002CFB4C /* CardDesginBack.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3E5ECE928DA6A8D002CFB4C /* CardDesginBack.xib */; };
 		E57979108E418C20FB00B012 /* Pods_card_generator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41BC52F883E6073B25E1E70 /* Pods_card_generator.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +38,10 @@
 		D36E086628DA3CF200C77B2F /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		D36E086728DA3CF200C77B2F /* CardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
 		D36E086B28DA3DCF00C77B2F /* cardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardModel.swift; sourceTree = "<group>"; };
+		D36E087128DA48E600C77B2F /* CardDesgin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDesgin.swift; sourceTree = "<group>"; };
+		D36E087228DA48E600C77B2F /* CardDesgin.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardDesgin.xib; sourceTree = "<group>"; };
+		D3E5ECE828DA6A8D002CFB4C /* CardDesginBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDesginBack.swift; sourceTree = "<group>"; };
+		D3E5ECE928DA6A8D002CFB4C /* CardDesginBack.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardDesginBack.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,8 +158,8 @@
 		D36E086528DA3CCF00C77B2F /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				D36E086628DA3CF200C77B2F /* CardCell.swift */,
-				D36E086728DA3CF200C77B2F /* CardCell.xib */,
+				D36E086D28DA489C00C77B2F /* Card Cell */,
+				D36E086E28DA48A600C77B2F /* Card Design */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -162,6 +170,42 @@
 				D36E086B28DA3DCF00C77B2F /* cardModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D36E086D28DA489C00C77B2F /* Card Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D36E086628DA3CF200C77B2F /* CardCell.swift */,
+				D36E086728DA3CF200C77B2F /* CardCell.xib */,
+			);
+			path = "Card Cell";
+			sourceTree = "<group>";
+		};
+		D36E086E28DA48A600C77B2F /* Card Design */ = {
+			isa = PBXGroup;
+			children = (
+				D3E5ECE628DA6A67002CFB4C /* face 1 */,
+				D3E5ECE728DA6A70002CFB4C /* face 2 */,
+			);
+			path = "Card Design";
+			sourceTree = "<group>";
+		};
+		D3E5ECE628DA6A67002CFB4C /* face 1 */ = {
+			isa = PBXGroup;
+			children = (
+				D36E087128DA48E600C77B2F /* CardDesgin.swift */,
+				D36E087228DA48E600C77B2F /* CardDesgin.xib */,
+			);
+			path = "face 1";
+			sourceTree = "<group>";
+		};
+		D3E5ECE728DA6A70002CFB4C /* face 2 */ = {
+			isa = PBXGroup;
+			children = (
+				D3E5ECE828DA6A8D002CFB4C /* CardDesginBack.swift */,
+				D3E5ECE928DA6A8D002CFB4C /* CardDesginBack.xib */,
+			);
+			path = "face 2";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +268,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3E5ECEB28DA6A8D002CFB4C /* CardDesginBack.xib in Resources */,
+				D36E087428DA48E600C77B2F /* CardDesgin.xib in Resources */,
 				D36E085628DA38FE00C77B2F /* LaunchScreen.storyboard in Resources */,
 				D36E085328DA38FE00C77B2F /* Assets.xcassets in Resources */,
 				D36E085128DA38FC00C77B2F /* Main.storyboard in Resources */,
@@ -283,6 +329,8 @@
 				D36E084E28DA38FC00C77B2F /* CardsViewController.swift in Sources */,
 				D36E084A28DA38FC00C77B2F /* AppDelegate.swift in Sources */,
 				D36E086C28DA3DCF00C77B2F /* cardModel.swift in Sources */,
+				D3E5ECEA28DA6A8D002CFB4C /* CardDesginBack.swift in Sources */,
+				D36E087328DA48E600C77B2F /* CardDesgin.swift in Sources */,
 				D36E086428DA3AE700C77B2F /* UIViewController.swift in Sources */,
 				D36E086828DA3CF200C77B2F /* CardCell.swift in Sources */,
 			);

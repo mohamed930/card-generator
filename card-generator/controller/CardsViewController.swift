@@ -12,7 +12,7 @@ class CardsViewController: UITableViewController {
 
     let cellNibFile = "CardCell"
     let cellIdentifier = "Cell"
-    let baseurl = "localhost:3001/"
+    let baseurl = "https://462f-41-42-35-163.ngrok.io/"
     let endPoint = "data"
     
     var cards: cardModel?
@@ -34,21 +34,26 @@ class CardsViewController: UITableViewController {
     func getDataFromServer() {
         self.startLoading()
         
-        AF.request(baseurl + endPoint, method: .get).response { [weak self] response in
+        AF.request(baseurl + endPoint, method: .get,encoding: JSONEncoding.default).response { [weak self] response in
             
             guard let self = self else { return }
             
             guard let statusCode = response.response?.statusCode else { return }
             
             if statusCode == 200 || statusCode == 201 {
-                guard let jsonResponse = try? response.result.get() else { return }
+                print("F: \(String(data: response.data!, encoding: .utf8)!)")
                 
-                guard let theJSONData =  try? JSONSerialization.data(withJSONObject: jsonResponse, options: []) else { return }
+                guard let theJSONData =  response.data else { return }
                 
                 guard let responseObj = try? JSONDecoder().decode(cardModel.self, from: theJSONData) else { return }
                 
                 self.cards = responseObj
                 
+                self.stopLoading()
+                self.tableView.reloadData()
+            }
+            else {
+                print("F: response failed \(String(describing: response.response?.description))")
                 self.stopLoading()
             }
             
@@ -77,7 +82,20 @@ class CardsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: CardCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! CardCell
         
+        guard let cards = cards else {
+            return cell
+        }
+
+        
+        cell.configureCell(model: cards.data[indexPath.row])
+        
         return cell
+    }
+    // -------------------------------------------
+    
+    // MARK: TODO: Set cell Hight For tabelView.
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 223
     }
     // -------------------------------------------
     
