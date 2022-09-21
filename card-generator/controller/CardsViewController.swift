@@ -12,7 +12,7 @@ class CardsViewController: UITableViewController {
 
     let cellNibFile = "CardCell"
     let cellIdentifier = "Cell"
-    let baseurl = "http://192.168.1.52:3001/" // "https://462f-41-42-35-163.ngrok.io/"
+    let baseurl =  "http://192.168.1.52:3001/" // "http://localhost:3001/" // "http://122.0.0.27:3001/" // "http://192.168.1.52:3001/"
     let endPoint = "data"
     
     var cards: cardModel?
@@ -64,8 +64,33 @@ class CardsViewController: UITableViewController {
     
     // MARK: TODO: This method for action export cards button.
     @IBAction func exportButtonAction (_ sender:Any) {
-        print("we are here!!")
+        
+        guard let cardsData = cards?.data else { return }
+//        let cell: CardCell = tableView.cellForRow(at: IndexPath(row: 0, section: 0)) as! CardCell
+        
+        for i in 0..<cardsData.count {
+            let cell: CardCell = tableView.cellForRow(at: IndexPath(row: i, section: 0)) as! CardCell
+            
+            for j in 0..<2 {
+                if j == 0 {
+                    let collectionCell: CardDesgin = cell.collectionView.cellForItem(at: IndexPath(row: 0 , section: 0)) as! CardDesgin
+                    let response = collectionCell.containerView.takeScreenshot(ob: self,noOfImage: String(i+1) ,noOfFace: String(j))
+                    if response {
+                        print("we are success")
+                    }
+                }
+                else if j == 1 {
+                    let response = self.view.SaveImage(image: UIImage(named: "back"), ob: self, numbrOfImage: String(i+1), numberOfFace: "2")
+                    if response {
+                        print("we are success")
+                    }
+                }
+            }
+        }
+
     }
+    // -------------------------------------------
+    
     
     // MARK: TODO: These method for tableView Configure.
     // -------------------------------------------------------

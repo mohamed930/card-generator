@@ -94,6 +94,7 @@
             <size key="customSize" width="477" height="202"/>
             <connections>
                 <outlet property="ageLabel" destination="mee-E2-2sb" id="xuw-Zn-cGl"/>
+                <outlet property="containerView" destination="Y2D-dS-NH2" id="hZL-f0-iB3"/>
                 <outlet property="nameLabel" destination="cQR-j1-E5w" id="oog-vC-Hc3"/>
             </connections>
             <point key="canvasLocation" x="-112.31884057971016" y="124.88839285714285"/>

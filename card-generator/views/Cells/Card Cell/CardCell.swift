@@ -27,31 +27,24 @@ class CardCell: UITableViewCell {
         cardsData = model
     }
     
+    // MARK: TODO: This method for regester cell nib file to collectionView,
     func configureCollectionViewCell() {
         collectionView.register(UINib(nibName: nibFileName, bundle: nil), forCellWithReuseIdentifier: CellIdentifier)
         collectionView.register(UINib(nibName: nibFileName2, bundle: nil), forCellWithReuseIdentifier: CellIdentifier1)
     }
+    // -------------------------------------------
 }
 
-extension CardCell: UICollectionViewDelegate {
-    
-}
-
+// MARK: TODO: This Section For Set CollectionView Cell Configure
 extension CardCell: UICollectionViewDataSource {
     
+    // MARK: TODO: number of cell at row
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 2
     }
     
+    // MARK: TODO: Configure cell.
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        /*let cell: CardDesgin = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CardDesgin
-        
-        if let cardsData = cardsData {
-            cell.configureCell(data: cardsData)
-        }
-        
-        return cell*/
         
         if indexPath.row == 0 {
             let cell: CardDesgin = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifier, for: indexPath) as! CardDesgin
@@ -63,13 +56,14 @@ extension CardCell: UICollectionViewDataSource {
             return cell
         }
         else {
-            let cell: CardDesginBack = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifier1, for: indexPath) as! CardDesginBack
+            let cell: CardDesgin = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifier1, for: indexPath) as! CardDesgin
             
             return cell
         }
     }
 }
 
+// MARK: TODO: Make Configure between two cells with line between them and size cell.
 extension CardCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 1.0
