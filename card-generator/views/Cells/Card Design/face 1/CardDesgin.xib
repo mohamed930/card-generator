@@ -31,14 +31,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="dpW-Kx-PK5">
-                                <rect key="frame" x="8" y="67" width="101" height="95"/>
+                                <rect key="frame" x="9" y="57" width="76" height="68"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="101" id="7c5-Mf-DCO"/>
-                                    <constraint firstAttribute="height" constant="95" id="ezv-Ag-Vjl"/>
+                                    <constraint firstAttribute="width" constant="76" id="7c5-Mf-DCO"/>
+                                    <constraint firstAttribute="height" constant="68" id="ezv-Ag-Vjl"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MZ1-3M-pS3">
-                                <rect key="frame" x="117" y="89.5" width="328" height="50"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="MZ1-3M-pS3">
+                                <rect key="frame" x="117" y="62.5" width="328" height="57"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اسم الموظف: محمد" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQR-j1-E5w">
                                         <rect key="frame" x="0.0" y="0.0" width="328" height="21"/>
@@ -51,7 +51,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="العمر: ٢٨" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mee-E2-2sb">
-                                        <rect key="frame" x="0.0" y="29" width="328" height="21"/>
+                                        <rect key="frame" x="0.0" y="36" width="328" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="328" id="47o-0l-BxK"/>
                                             <constraint firstAttribute="height" constant="21" id="FDM-Gt-yBq"/>
@@ -68,18 +68,28 @@
                                 <color key="textColor" white="0.5" alpha="0.5" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T5E-Bf-JOd" customClass="QRCodeView" customModule="QRCodeGenerator">
+                                <rect key="frame" x="29.5" y="152" width="35" height="35"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="T5E-Bf-JOd" secondAttribute="height" multiplier="1:1" id="Ggc-Hy-l9n"/>
+                                    <constraint firstAttribute="height" constant="35" id="Jzd-4W-ejc"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="MZ1-3M-pS3" firstAttribute="centerY" secondItem="dpW-Kx-PK5" secondAttribute="centerY" id="12b-rY-sfe"/>
-                            <constraint firstItem="dpW-Kx-PK5" firstAttribute="leading" secondItem="Y2D-dS-NH2" secondAttribute="leading" constant="8" id="2PK-1n-7bZ"/>
+                            <constraint firstItem="dpW-Kx-PK5" firstAttribute="leading" secondItem="Y2D-dS-NH2" secondAttribute="leading" constant="9" id="2PK-1n-7bZ"/>
                             <constraint firstAttribute="trailing" secondItem="MZ1-3M-pS3" secondAttribute="trailing" constant="32" id="6U7-Lx-Y1h"/>
                             <constraint firstItem="lcQ-td-EhA" firstAttribute="centerX" secondItem="Y2D-dS-NH2" secondAttribute="centerX" id="DP4-du-SzB"/>
                             <constraint firstAttribute="bottom" secondItem="lcQ-td-EhA" secondAttribute="bottom" constant="10" id="Eh3-DP-vnc"/>
                             <constraint firstItem="wqq-oW-eYi" firstAttribute="top" secondItem="Y2D-dS-NH2" secondAttribute="top" constant="12" id="Faz-Fh-nlt"/>
                             <constraint firstAttribute="trailing" secondItem="wqq-oW-eYi" secondAttribute="trailing" constant="8" id="WDb-HV-qyp"/>
                             <constraint firstItem="wqq-oW-eYi" firstAttribute="leading" secondItem="Y2D-dS-NH2" secondAttribute="leading" constant="8" id="aSO-zk-fZx"/>
-                            <constraint firstItem="dpW-Kx-PK5" firstAttribute="top" secondItem="wqq-oW-eYi" secondAttribute="bottom" constant="25" id="u4L-b0-nYO"/>
+                            <constraint firstItem="T5E-Bf-JOd" firstAttribute="centerX" secondItem="dpW-Kx-PK5" secondAttribute="centerX" id="gQx-qt-8Zc"/>
+                            <constraint firstItem="T5E-Bf-JOd" firstAttribute="top" secondItem="dpW-Kx-PK5" secondAttribute="bottom" constant="27" id="rsY-J5-Uyg"/>
+                            <constraint firstItem="dpW-Kx-PK5" firstAttribute="top" secondItem="wqq-oW-eYi" secondAttribute="bottom" constant="15" id="u4L-b0-nYO"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -96,6 +106,7 @@
                 <outlet property="ageLabel" destination="mee-E2-2sb" id="xuw-Zn-cGl"/>
                 <outlet property="containerView" destination="Y2D-dS-NH2" id="hZL-f0-iB3"/>
                 <outlet property="nameLabel" destination="cQR-j1-E5w" id="oog-vC-Hc3"/>
+                <outlet property="qrcodeview" destination="T5E-Bf-JOd" id="Svp-MD-S7C"/>
             </connections>
             <point key="canvasLocation" x="-112.31884057971016" y="124.88839285714285"/>
         </collectionViewCell>

@@ -1,24 +1,28 @@
 PODS:
   - Alamofire (5.5.0)
   - Kingfisher (7.2.0)
+  - QRCodeGenerator (1.0.5)
   - RappleProgressHUD (4.1)
 
 DEPENDENCIES:
   - Alamofire
   - Kingfisher
+  - QRCodeGenerator
   - RappleProgressHUD
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - Kingfisher
+    - QRCodeGenerator
     - RappleProgressHUD
 
 SPEC CHECKSUMS:
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
   Kingfisher: 3ac0b75b155cabc0e544877d1a4deea29feece92
+  QRCodeGenerator: dfa6981a0e571c0f7d90cc15e9ecc6d849a14d27
   RappleProgressHUD: f29bc5dc5f9834c2caa9c2ae21ba11f3ff2b5a85
 
-PODFILE CHECKSUM: 1bfdf821c2cd7e8d70935245fba79b700d55ef58
+PODFILE CHECKSUM: 5b324eee50ecaaaf3e8bcc48be763310af5243bb
 
 COCOAPODS: 1.11.3

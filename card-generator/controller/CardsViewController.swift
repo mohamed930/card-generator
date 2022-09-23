@@ -12,7 +12,7 @@ class CardsViewController: UITableViewController {
 
     let cellNibFile = "CardCell"
     let cellIdentifier = "Cell"
-    let baseurl =  "http://192.168.1.52:3001/" // "http://localhost:3001/" // "http://122.0.0.27:3001/" // "http://192.168.1.52:3001/"
+    let baseurl =  "http://192.168.1.203:3001/" // "http://localhost:3001/" // "http://122.0.0.27:3001/" // "http://192.168.1.52:3001/"
     let endPoint = "data"
     
     var cards: cardModel?

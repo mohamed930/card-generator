@@ -6,12 +6,14 @@
 //
 
 import UIKit
+import QRCodeGenerator
 
 class CardDesgin: UICollectionViewCell {
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var ageLabel:  UILabel!
     @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var qrcodeview: QRCodeView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,5 +23,12 @@ class CardDesgin: UICollectionViewCell {
     func configureCell(data: dataModel) {
         nameLabel.text = "اسم الموظف: " + data.name
         ageLabel.text  = "عُمر الموظف: " + data.age
+        
+        logQR(data.code)
+    }
+    
+    private func logQR(_ text:String) {
+        qrcodeview.text = text
+        qrcodeview.tintColor = .black
     }
 }

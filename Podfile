@@ -10,5 +10,6 @@ target 'card-generator' do
   pod 'Alamofire'
   pod 'RappleProgressHUD'
   pod 'Kingfisher'
+  pod 'QRCodeGenerator'
 
 end
