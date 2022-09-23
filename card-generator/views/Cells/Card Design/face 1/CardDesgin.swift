@@ -12,6 +12,9 @@ class CardDesgin: UICollectionViewCell {
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var ageLabel:  UILabel!
+    @IBOutlet weak var employeeCodeLabel: UILabel!
+    @IBOutlet weak var employeeAppointmentDateLabel:UILabel!
+    @IBOutlet weak var employeePromotionDateLabel:UILabel!
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var qrcodeview: QRCodeView!
 
@@ -23,6 +26,9 @@ class CardDesgin: UICollectionViewCell {
     func configureCell(data: dataModel) {
         nameLabel.text = "اسم الموظف: " + data.name
         ageLabel.text  = "عُمر الموظف: " + data.age
+        employeeCodeLabel.text = "الرقم الكودى: " + data.code
+        employeeAppointmentDateLabel.text = "تاريخ التعين: " + data.startDate
+        employeePromotionDateLabel.text = "تاريخ الترقية: " + data.endDate
         
         logQR(data.code)
     }

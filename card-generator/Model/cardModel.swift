@@ -17,4 +17,6 @@ struct dataModel: Codable {
     var name: String
     var age: String
     var code: String
+    var startDate: String
+    var endDate: String
 }

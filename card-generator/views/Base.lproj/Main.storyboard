@@ -21,13 +21,16 @@
                             <outlet property="delegate" destination="QRG-Nt-hDk" id="4g9-BL-kJz"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="الكروت" id="ow1-x2-cN4">
-                        <barButtonItem key="rightBarButtonItem" title="تصدير الكروت" id="SDs-fO-xuW">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="الكروت" id="4fv-qr-34U">
+                        <barButtonItem key="leftBarButtonItem" image="searchQr" id="HmM-KQ-LFe"/>
+                        <barButtonItem key="rightBarButtonItem" title="تصدير الكروت" id="Uzc-pm-G1q">
                             <connections>
-                                <action selector="exportButtonAction:" destination="QRG-Nt-hDk" id="Ck3-WA-CTm"/>
+                                <action selector="exportButtonAction:" destination="QRG-Nt-hDk" id="asF-0R-Hjx"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uk4-FE-HRi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -53,6 +56,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="searchQr" width="27" height="19"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

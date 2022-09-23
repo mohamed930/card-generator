@@ -12,14 +12,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="gTV-IL-0wX" customClass="CardDesgin" customModule="card_generator" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="477" height="223"/>
+            <rect key="frame" x="0.0" y="0.0" width="477" height="213"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="477" height="223"/>
+                <rect key="frame" x="0.0" y="0.0" width="477" height="213"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y2D-dS-NH2">
-                        <rect key="frame" x="0.0" y="0.0" width="477" height="223"/>
+                        <rect key="frame" x="0.0" y="0.0" width="477" height="213"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="كارت تعريفي عن الموظف" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqq-oW-eYi">
                                 <rect key="frame" x="8" y="12" width="461" height="30"/>
@@ -37,8 +37,8 @@
                                     <constraint firstAttribute="height" constant="68" id="ezv-Ag-Vjl"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="MZ1-3M-pS3">
-                                <rect key="frame" x="117" y="62.5" width="328" height="57"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="MZ1-3M-pS3">
+                                <rect key="frame" x="117" y="52" width="328" height="88"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اسم الموظف: محمد" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQR-j1-E5w">
                                         <rect key="frame" x="0.0" y="0.0" width="328" height="21"/>
@@ -46,50 +46,75 @@
                                             <constraint firstAttribute="height" constant="21" id="Etx-h6-kEJ"/>
                                             <constraint firstAttribute="width" constant="328" id="Ovk-Vy-vrr"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="العمر: ٢٨" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mee-E2-2sb">
-                                        <rect key="frame" x="0.0" y="36" width="328" height="21"/>
+                                        <rect key="frame" x="0.0" y="25" width="328" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="328" id="47o-0l-BxK"/>
                                             <constraint firstAttribute="height" constant="21" id="FDM-Gt-yBq"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تاريخ التعيين: ٢٠-٠٩-٢٠٢١" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vM-3e-h21">
+                                        <rect key="frame" x="0.0" y="50" width="328" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تاريخ اخر ترقية: ٠١-٠٧-٢٠٢٢" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kK-ZQ-b7j">
+                                        <rect key="frame" x="0.0" y="71" width="328" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تمت طباعه الكروت ببرنامج طباعه الكروت" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcQ-td-EhA">
-                                <rect key="frame" x="142.5" y="198.5" width="192.5" height="14.5"/>
+                                <rect key="frame" x="142.5" y="188.5" width="192.5" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" white="0.5" alpha="0.5" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T5E-Bf-JOd" customClass="QRCodeView" customModule="QRCodeGenerator">
-                                <rect key="frame" x="29.5" y="152" width="35" height="35"/>
+                                <rect key="frame" x="29.5" y="142" width="35" height="35"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" systemColor="labelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="T5E-Bf-JOd" secondAttribute="height" multiplier="1:1" id="Ggc-Hy-l9n"/>
                                     <constraint firstAttribute="height" constant="35" id="Jzd-4W-ejc"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الرقم الكودى: 21-S2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="285-Iv-9v5">
+                                <rect key="frame" x="74.5" y="149" width="101" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="x0F-sV-NTO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="MZ1-3M-pS3" firstAttribute="centerY" secondItem="dpW-Kx-PK5" secondAttribute="centerY" id="12b-rY-sfe"/>
                             <constraint firstItem="dpW-Kx-PK5" firstAttribute="leading" secondItem="Y2D-dS-NH2" secondAttribute="leading" constant="9" id="2PK-1n-7bZ"/>
                             <constraint firstAttribute="trailing" secondItem="MZ1-3M-pS3" secondAttribute="trailing" constant="32" id="6U7-Lx-Y1h"/>
                             <constraint firstItem="lcQ-td-EhA" firstAttribute="centerX" secondItem="Y2D-dS-NH2" secondAttribute="centerX" id="DP4-du-SzB"/>
                             <constraint firstAttribute="bottom" secondItem="lcQ-td-EhA" secondAttribute="bottom" constant="10" id="Eh3-DP-vnc"/>
+                            <constraint firstItem="285-Iv-9v5" firstAttribute="centerY" secondItem="T5E-Bf-JOd" secondAttribute="centerY" id="FGw-BG-EY5"/>
                             <constraint firstItem="wqq-oW-eYi" firstAttribute="top" secondItem="Y2D-dS-NH2" secondAttribute="top" constant="12" id="Faz-Fh-nlt"/>
+                            <constraint firstItem="285-Iv-9v5" firstAttribute="leading" secondItem="T5E-Bf-JOd" secondAttribute="trailing" constant="10" id="J4C-HM-5s3"/>
                             <constraint firstAttribute="trailing" secondItem="wqq-oW-eYi" secondAttribute="trailing" constant="8" id="WDb-HV-qyp"/>
                             <constraint firstItem="wqq-oW-eYi" firstAttribute="leading" secondItem="Y2D-dS-NH2" secondAttribute="leading" constant="8" id="aSO-zk-fZx"/>
                             <constraint firstItem="T5E-Bf-JOd" firstAttribute="centerX" secondItem="dpW-Kx-PK5" secondAttribute="centerX" id="gQx-qt-8Zc"/>
-                            <constraint firstItem="T5E-Bf-JOd" firstAttribute="top" secondItem="dpW-Kx-PK5" secondAttribute="bottom" constant="27" id="rsY-J5-Uyg"/>
+                            <constraint firstItem="MZ1-3M-pS3" firstAttribute="top" secondItem="wqq-oW-eYi" secondAttribute="bottom" constant="10" id="kfq-3c-b74"/>
+                            <constraint firstItem="T5E-Bf-JOd" firstAttribute="top" secondItem="dpW-Kx-PK5" secondAttribute="bottom" constant="17" id="rsY-J5-Uyg"/>
                             <constraint firstItem="dpW-Kx-PK5" firstAttribute="top" secondItem="wqq-oW-eYi" secondAttribute="bottom" constant="15" id="u4L-b0-nYO"/>
+                            <constraint firstItem="MZ1-3M-pS3" firstAttribute="leading" secondItem="dpW-Kx-PK5" secondAttribute="trailing" constant="32" id="vlf-We-va2"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -101,20 +126,29 @@
                 <constraint firstAttribute="trailing" secondItem="Y2D-dS-NH2" secondAttribute="trailing" id="gwc-bo-qhw"/>
                 <constraint firstItem="Y2D-dS-NH2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="xum-Zo-KoB"/>
             </constraints>
-            <size key="customSize" width="477" height="202"/>
+            <size key="customSize" width="477" height="192"/>
             <connections>
                 <outlet property="ageLabel" destination="mee-E2-2sb" id="xuw-Zn-cGl"/>
                 <outlet property="containerView" destination="Y2D-dS-NH2" id="hZL-f0-iB3"/>
+                <outlet property="employeeAppointmentDateLabel" destination="7vM-3e-h21" id="nvc-SC-03d"/>
+                <outlet property="employeeCodeLabel" destination="285-Iv-9v5" id="HBo-9B-5oR"/>
+                <outlet property="employeePromotionDateLabel" destination="5kK-ZQ-b7j" id="16E-qq-E2R"/>
                 <outlet property="nameLabel" destination="cQR-j1-E5w" id="oog-vC-Hc3"/>
                 <outlet property="qrcodeview" destination="T5E-Bf-JOd" id="Svp-MD-S7C"/>
             </connections>
-            <point key="canvasLocation" x="-112.31884057971016" y="124.88839285714285"/>
+            <point key="canvasLocation" x="-112.31884057971016" y="121.54017857142857"/>
         </collectionViewCell>
     </objects>
     <resources>
         <image name="logo" width="128" height="124.5"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

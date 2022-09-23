@@ -126,7 +126,7 @@ class CardsViewController: UITableViewController {
     
     // MARK: TODO: Set cell Hight For tabelView.
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 223
+        return 213
     }
     // -------------------------------------------
     
