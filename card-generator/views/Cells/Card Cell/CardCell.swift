@@ -25,6 +25,7 @@ class CardCell: UITableViewCell {
     
     func configureCell(model: dataModel) {
         cardsData = model
+        collectionView.reloadData()
     }
     
     // MARK: TODO: This method for regester cell nib file to collectionView,

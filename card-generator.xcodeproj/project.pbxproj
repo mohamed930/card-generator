@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D3125F0D28DAF72E0043FFB1 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3125F0C28DAF72E0043FFB1 /* UIView.swift */; };
+		D347E1DC28DF422A00358AF7 /* QrcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D347E1DB28DF422A00358AF7 /* QrcodeViewController.swift */; };
 		D36E084A28DA38FC00C77B2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36E084928DA38FC00C77B2F /* AppDelegate.swift */; };
 		D36E084E28DA38FC00C77B2F /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36E084D28DA38FC00C77B2F /* CardsViewController.swift */; };
 		D36E085128DA38FC00C77B2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D36E084F28DA38FC00C77B2F /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 		5952CE2B538B487F8FDA9ED0 /* Pods-card-generator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-card-generator.release.xcconfig"; path = "Target Support Files/Pods-card-generator/Pods-card-generator.release.xcconfig"; sourceTree = "<group>"; };
 		B41BC52F883E6073B25E1E70 /* Pods_card_generator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_card_generator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3125F0C28DAF72E0043FFB1 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		D347E1DB28DF422A00358AF7 /* QrcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrcodeViewController.swift; sourceTree = "<group>"; };
 		D36E084628DA38FC00C77B2F /* card-generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "card-generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D36E084928DA38FC00C77B2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D36E084D28DA38FC00C77B2F /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				D36E084D28DA38FC00C77B2F /* CardsViewController.swift */,
+				D347E1DB28DF422A00358AF7 /* QrcodeViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				D3A63E5B28DBCBB0008B9E53 /* UIImage.swift in Sources */,
 				D36E086428DA3AE700C77B2F /* UIViewController.swift in Sources */,
 				D36E086828DA3CF200C77B2F /* CardCell.swift in Sources */,
+				D347E1DC28DF422A00358AF7 /* QrcodeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
